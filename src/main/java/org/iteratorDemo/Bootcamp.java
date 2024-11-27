@@ -16,10 +16,11 @@ public class Bootcamp {
         };
 
         Bootcamp bootcamp = new Bootcamp(students);
-        TeacherAssistant assistant = new TeacherAssistant();
-        assistant.createAStudentNameList(bootcamp.studentsList);
 
         Teacher mingHao = new Teacher("MingHao");
+        System.out.printf("%s is finding the assistant.%n", mingHao.name);
+        TeacherAssistant assistant = new TeacherAssistant();
+        assistant.createAStudentNameList(bootcamp.studentsList);
         mingHao.findAssistant(assistant);
         mingHao.askQuestion();
 
@@ -27,6 +28,7 @@ public class Bootcamp {
         System.out.println("MingHao's lesson is over. ShangQi is coming in.\n\n");
 
         Teacher shangQi = new Teacher("ShangQi");
+        System.out.printf("%s is finding the assistant.%n", shangQi.name);
         shangQi.findAssistant(assistant);
         assistant.reset();
         shangQi.askQuestion();
