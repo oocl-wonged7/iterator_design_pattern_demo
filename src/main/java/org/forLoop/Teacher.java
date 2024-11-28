@@ -12,7 +12,6 @@ public class Teacher {
 
     public void CreateAStudentNameList(List<Student> students) {
         this.studentsNameList = students;
-        // System.out.printf("%s is creating a student name list.%n", name);
     }
 
     public void askQuestion() {

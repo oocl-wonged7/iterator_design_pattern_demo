@@ -14,8 +14,8 @@ public class Teacher {
     }
 
     public void askQuestion() {
+        System.out.printf("%s is asking a question.%n", name);
         while (assistant.hasNext()) {
-            System.out.printf("%s is asking a question.%n", name);
             Student student = assistant.next();
             student.answerQuestion();
         }

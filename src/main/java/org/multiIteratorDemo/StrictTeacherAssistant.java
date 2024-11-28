@@ -2,10 +2,6 @@ package org.multiIteratorDemo;
 
 public class StrictTeacherAssistant extends TeacherAssistant {
 
-    public StrictTeacherAssistant() {
-        super();
-    }
-
     @Override
     public void createAStudentNameList(Student[] students) {
         this.students = students;
@@ -14,5 +10,9 @@ public class StrictTeacherAssistant extends TeacherAssistant {
 
     @Override
     public boolean hasNext() { return currentIndex < students.length; }
+
+    public StrictTeacherAssistant() {
+        super();
+    }
 
 }

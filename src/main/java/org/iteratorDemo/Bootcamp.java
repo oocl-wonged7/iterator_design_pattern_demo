@@ -24,8 +24,8 @@ public class Bootcamp {
         mingHao.findAssistant(assistant);
         mingHao.askQuestion();
 
-        System.out.println("\n\nDing Dong~~ Ding Dong~~");
-        System.out.println("MingHao's lesson is over. ShangQi is coming in.\n\n");
+        System.out.println("\nDing Dong~~ Ding Dong~~");
+        System.out.println("MingHao's lesson is over. ShangQi is coming in.\n");
 
         Teacher shangQi = new Teacher("ShangQi");
         System.out.printf("%s is finding the assistant.%n", shangQi.name);

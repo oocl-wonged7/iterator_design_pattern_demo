@@ -23,10 +23,9 @@ public class Bootcamp {
         Teacher mingHao = new Teacher("MingHao");
         mingHao.CreateAStudentNameList(bootcamp.studentsList);
         System.out.printf("%s is asking a question.%n", mingHao.name);
-        mingHao.studentsNameList.stream()
-                .forEach(student -> {
-                    student.answerQuestion();
-                });;
+        mingHao.studentsNameList
+                .forEach(Student::answerQuestion);
+
 
         System.out.println("\n\nDing Dong~~ Ding Dong~~");
         System.out.println("MingHao's lesson is over.\n\n");
